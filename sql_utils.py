@@ -1,4 +1,5 @@
 import re
+import json
 
 
 def rows_to_text(rows, limit=None, max_chars=5000, cell_max=1000):
