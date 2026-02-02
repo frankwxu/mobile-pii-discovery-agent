@@ -1,6 +1,7 @@
 db_dir: selectedDBs
 out_dir: batch_results
 config_py: my_run_config.py
+enable_observe: false
 pii_targets:
   - EMAIL
   - PHONE
