@@ -26,14 +26,24 @@ def normalize_email(value: Any) -> Optional[str]:
     s = _collapse_spaces(s.lower()).strip("<>")
     return s if _EMAIL_RE.match(s) else None
 
-def normalize_phone_keep_all(value: Any) -> Optional[str]:
+def normalize_phone_us10(value: Any) -> Optional[str]:
     if value is None:
         return None
     s = str(value).strip()
     if not s:
         return None
+
     digits = re.sub(r"\D", "", s)
-    return digits or None
+
+    # Strip leading US country code if present
+    if len(digits) == 11 and digits.startswith("1"):
+        digits = digits[1:]
+
+    # Return only valid 10-digit US numbers
+    if len(digits) != 10:
+        return None
+
+    return digits
 
 def normalize_username(value: Any) -> Optional[str]:
     """
@@ -81,7 +91,7 @@ def normalize_pii_value(pii_type: str, value: Any) -> Optional[str]:
     if t == "EMAIL":
         return normalize_email(value)
     if t == "PHONE":
-        return normalize_phone_keep_all(value)
+        return normalize_phone_us10(value)
     if t == "USERNAME":
         return normalize_username(value)
     if t == "PERSON_NAME":
