@@ -1,0 +1,5 @@
+{"db_path": "selectedDBs\\A2_core.db", "PII_Type": "EMAIL", "PII": ["sharononeil368@gmail.com"], "Num_of_PII": 1, "source_columns": ["SnapUserStore.textVal"], "num_of_source_columns": 1}
+{"db_path": "selectedDBs\\A2_core.db", "PII_Type": "PHONE", "PII": ["18624338329"], "Num_of_PII": 1, "source_columns": ["SnapUserStore.textVal"], "num_of_source_columns": 1}
+{"db_path": "selectedDBs\\A2_core.db", "PII_Type": "USERNAME", "PII": ["oneil3607", "oneil3607"], "Num_of_PII": 2, "source_columns": ["SnapUserStore.textVal"], "num_of_source_columns": 1}
+{"db_path": "selectedDBs\\A2_core.db", "PII_Type": "PERSON_NAME", "PII": ["Sharon Oneil"], "Num_of_PII": 1, "source_columns": ["SnapUserStore.textVal"], "num_of_source_columns": 1}
+{"db_path": "selectedDBs\\A2_core.db", "PII_Type": "POSTAL_ADDRESS", "PII": [], "Num_of_PII": 0, "source_columns": [], "num_of_source_columns": 0}

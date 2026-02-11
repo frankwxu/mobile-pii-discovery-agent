@@ -276,49 +276,96 @@ def split_union_selects(sql: str) -> list[str]:
     parts = re.split(r"\bUNION(?:\s+ALL)?\b", sql, flags=re.IGNORECASE)
     return [p.strip() for p in parts if p.strip()]
 
-def extract_select_columns(select_sql: str) -> list[str]:
+
+
+import re
+from typing import List
+
+def extract_select_columns(select_sql: str) -> List[str]:
     """
-    Extract column names or column aliases from a single SELECT statement.
+    Extract raw column names from a simple SELECT statement:
+      - No SELECT *
+      - No functions (COUNT, LOWER, etc.)
+      - No expressions (a+b)
+      - No aliases (AS or implicit)
+      - Comma-separated columns only
 
-    Input:
-        select_sql (str): A SQL SELECT statement containing an explicit
-                          projection list (no SELECT *), such as:
-                          "SELECT col, col2 AS alias FROM table".
-
-    Output:
-        list[str]: A list of column names or aliases in the order they appear
-                   in the SELECT clause.
-
-    Example:
-        Input:
-            SELECT email, username AS user FROM users
-
-        Output:
-            ["email", "user"]
+    Returns column names in order; strips any table prefix (e.g., u.email -> email).
     """
-    m = re.search(
-        r"SELECT\s+(.*?)\s+FROM\s",
-        select_sql,
-        flags=re.IGNORECASE | re.DOTALL
-    )
+    m = re.search(r"\bSELECT\s+(.*?)\s+\bFROM\b", select_sql, flags=re.IGNORECASE | re.DOTALL)
     if not m:
         return []
 
-    select_list = m.group(1)
+    select_list = m.group(1).strip()
+    if not select_list or select_list == "*":
+        return []
 
-    columns = []
+    cols: List[str] = []
     for item in select_list.split(","):
         item = item.strip()
 
-        # Handle aliases: col AS alias or col alias
-        alias_match = re.search(r"\bAS\s+(\w+)$", item, re.IGNORECASE)
-        if alias_match:
-            columns.append(alias_match.group(1))
-        else:
-            # Take the final identifier
-            columns.append(item.split()[-1])
+        # remove backticks/quotes around identifiers if present
+        item = item.strip("`").strip('"')
 
-    return columns
+        # strip table prefix if any (table.col -> col)
+        if "." in item:
+            item = item.split(".")[-1]
+
+        # basic validation: only simple identifiers
+        if re.fullmatch(r"[A-Za-z_]\w*", item):
+            cols.append(item)
+        else:
+            # For "simple SQL" this shouldn't happen; ignore or raise
+            # raise ValueError(f"Non-simple select item: {item}")
+            cols.append(item)
+
+    return cols
+
+
+
+# def extract_select_columns(select_sql: str) -> list[str]:
+#     """
+#     Extract column names or column aliases from a single SELECT statement.
+
+#     Input:
+#         select_sql (str): A SQL SELECT statement containing an explicit
+#                           projection list (no SELECT *), such as:
+#                           "SELECT col, col2 AS alias FROM table".
+
+#     Output:
+#         list[str]: A list of column names or aliases in the order they appear
+#                    in the SELECT clause.
+
+#     Example:
+#         Input:
+#             SELECT email, username AS user FROM users
+
+#         Output:
+#             ["email", "user"]
+#     """
+#     m = re.search(
+#         r"SELECT\s+(.*?)\s+FROM\s",
+#         select_sql,
+#         flags=re.IGNORECASE | re.DOTALL
+#     )
+#     if not m:
+#         return []
+
+#     select_list = m.group(1)
+
+#     columns = []
+#     for item in select_list.split(","):
+#         item = item.strip()
+
+#         # Handle aliases: col AS alias or col alias
+#         alias_match = re.search(r"\bAS\s+(\w+)$", item, re.IGNORECASE)
+#         if alias_match:
+#             columns.append(alias_match.group(1))
+#         else:
+#             # Take the final identifier
+#             columns.append(item.split()[-1])
+
+#     return columns
 
 
 def is_sqlite_file(p: Path) -> bool:

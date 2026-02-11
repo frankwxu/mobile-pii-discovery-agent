@@ -1,0 +1,5 @@
+{"db_path": "selectedDBs\\A5_SBrowser2.db", "PII_Type": "EMAIL", "PII": [], "Num_of_PII": 0, "source_columns": [], "num_of_source_columns": 0}
+{"db_path": "selectedDBs\\A5_SBrowser2.db", "PII_Type": "PHONE", "PII": [], "Num_of_PII": 0, "source_columns": [], "num_of_source_columns": 0}
+{"db_path": "selectedDBs\\A5_SBrowser2.db", "PII_Type": "USERNAME", "PII": [], "Num_of_PII": 0, "source_columns": [], "num_of_source_columns": 0}
+{"db_path": "selectedDBs\\A5_SBrowser2.db", "PII_Type": "PERSON_NAME", "PII": [], "Num_of_PII": 0, "source_columns": [], "num_of_source_columns": 0}
+{"db_path": "selectedDBs\\A5_SBrowser2.db", "PII_Type": "POSTAL_ADDRESS", "PII": [], "Num_of_PII": 0, "source_columns": [], "num_of_source_columns": 0}
