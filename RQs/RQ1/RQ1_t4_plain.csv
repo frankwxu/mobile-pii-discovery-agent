@@ -1,26 +1,26 @@
 ID,Application,Database,Email,Phone,UserName,PersonName,PostalAddr,Total
 A1,WhatsApp,commerce.db,0,0,0,0,0,0
-A1,WhatsApp,msgstore.db,0,7,5,15,0,27
-A1,WhatsApp,wa.db,0,16,680,10,0,706
-A2,Snapchat,core.db,0,1,5,1,0,7
+A1,WhatsApp,msgstore.db,0,0,3,26,0,29
+A1,WhatsApp,wa.db,0,408,0,129,0,537
+A2,Snapchat,core.db,1,1,1,0,0,3
 A2,Snapchat,journal.db,0,0,0,0,0,0
-A2,Snapchat,main.db,1,13,0,11,0,25
+A2,Snapchat,main.db,1,13,1229,252,0,1495
 A3,Telegram,account1cache4.db,0,0,0,0,0,0
 A3,Telegram,account2cache4.db,0,0,0,0,0,0
 A3,Telegram,account3cache4.db,0,0,0,0,0,0
 A4,Google Maps,gmm_myplaces.db,0,0,0,0,0,0
 A4,Google Maps,gmm_storage.db,0,0,0,0,0,0
-A4,Google Maps,peopleCache_sh....db,2,0,2,0,0,4
-A5,Samsung Internet,SBrowser.db,1,0,5,0,0,6
-A5,Samsung Internet,SBrowser2.db,0,0,0,0,0,0
-A5,Samsung Internet,searchengine.db,0,0,17,0,0,17
-I1,WhatsApp,CallHistory.sqlite,0,0,10,0,0,10
-I1,WhatsApp,ChatStorage.sqlite,0,0,0,14,2,16
-I1,WhatsApp,ContactsV2.sqlite,0,655,0,0,0,655
-I2,Contacts,AddressBook.sqlitedb,6,548,1,748,0,1303
+A4,Google Maps,peopleCache_sh....db,2,1,2,2,0,7
+A5,Samsung Internet,SBrowser.db,1,0,0,2,0,3
+A5,Samsung Internet,SBrowser2.db,0,0,0,1,0,1
+A5,Samsung Internet,searchengine.db,0,0,0,0,0,0
+I1,WhatsApp,CallHistory.sqlite,0,3,0,0,0,3
+I1,WhatsApp,ChatStorage.sqlite,0,63,0,66,2,131
+I1,WhatsApp,ContactsV2.sqlite,0,0,0,1350,0,1350
+I2,Contacts,AddressBook.sqlitedb,6,716,0,733,0,1455
 I2,Contacts,AddressB....sqlitedb,0,0,0,0,0,0
-I3,Apple Messages,sms.db,1,0,0,10,0,11
-I4,Safari,CloudTabs.db,0,0,25,0,0,25
-I4,Safari,History.db,0,0,4,0,0,4
-I5,Calendar,Calendar.sqlitedb,1,0,0,0,0,1
+I3,Apple Messages,sms.db,7,0,0,14,0,21
+I4,Safari,CloudTabs.db,0,0,0,0,0,0
+I4,Safari,History.db,0,0,0,0,0,0
+I5,Calendar,Calendar.sqlitedb,1,0,0,1,0,2
 I5,Calendar,Extras.db,0,0,0,0,0,0

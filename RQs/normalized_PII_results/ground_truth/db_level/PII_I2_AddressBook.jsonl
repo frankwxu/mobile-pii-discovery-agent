@@ -1,0 +1,5 @@
+{"db_path": "selectedDBs\\I2_AddressBook.sqlitedb", "PII_type": "", "PII": [], "Num_of_PII": 0, "source_columns": ["abmultivalue.value", "abpersonfulltextsearch_content.c17email"], "Num_of_source_columns": 2}
+{"db_path": "selectedDBs\\I2_AddressBook.sqlitedb", "PII_type": "", "PII": [], "Num_of_PII": 0, "source_columns": ["abmultivalue.value"], "Num_of_source_columns": 1}
+{"db_path": "selectedDBs\\I2_AddressBook.sqlitedb", "PII_type": "", "PII": [], "Num_of_PII": 0, "source_columns": [], "Num_of_source_columns": 0}
+{"db_path": "selectedDBs\\I2_AddressBook.sqlitedb", "PII_type": "", "PII": [], "Num_of_PII": 0, "source_columns": ["abperson.first+last", "abpersonfulltextsearch_content.c0first+c1last+c2middle"], "Num_of_source_columns": 2}
+{"db_path": "selectedDBs\\I2_AddressBook.sqlitedb", "PII_type": "", "PII": [], "Num_of_PII": 0, "source_columns": ["abmultivalueentry.value", "abpersonfulltextsearch_content.c18address"], "Num_of_source_columns": 2}

@@ -1,4 +1,4 @@
-GPT4O_RESULTS_DIR = 'normalized_PII_results/gpt4o/db_level/'
+GPT4O_RESULTS_DIR = 'normalized_PII_results/GPT-5.1/db_level/'
 GROUND_TRUTH_DIR = 'normalized_PII_results/ground_truth/db_level/'
 
 PII_TYPES = ['EMAIL', 'PHONE', 'USERNAME', 'PERSON_NAME', 'POSTAL_ADDRESS']

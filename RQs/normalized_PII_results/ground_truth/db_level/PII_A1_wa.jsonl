@@ -1,0 +1,5 @@
+{"db_path": "selectedDBs\\A1_wa.db", "PII_type": "", "PII": [], "Num_of_PII": 0, "source_columns": [], "Num_of_source_columns": 0}
+{"db_path": "selectedDBs\\A1_wa.db", "PII_type": "", "PII": [], "Num_of_PII": 0, "source_columns": ["wa_address_book.number", "wa_contacts.number"], "Num_of_source_columns": 2}
+{"db_path": "selectedDBs\\A1_wa.db", "PII_type": "", "PII": [], "Num_of_PII": 0, "source_columns": ["wa_bot_profiles.creator_name", "wa_contacts.wa_name", "wa_vnames.verified_name"], "Num_of_source_columns": 3}
+{"db_path": "selectedDBs\\A1_wa.db", "PII_type": "", "PII": [], "Num_of_PII": 0, "source_columns": ["wa_address_book.display_name", "wa_address_book.given_name+family_name", "wa_address_book.sort_name", "wa_contacts.given_name+family_name", "wa_contacts.sort_name"], "Num_of_source_columns": 5}
+{"db_path": "selectedDBs\\A1_wa.db", "PII_type": "", "PII": [], "Num_of_PII": 0, "source_columns": [], "Num_of_source_columns": 0}

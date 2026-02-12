@@ -1,0 +1,5 @@
+{"db_path": "selectedDBs\\I3_sms.db", "PII_type": "", "PII": [], "Num_of_PII": 0, "source_columns": ["chat.account_login", "chat.chat_identifier", "chat.guid", "handle.id", "message.account"], "Num_of_source_columns": 5}
+{"db_path": "selectedDBs\\I3_sms.db", "PII_type": "", "PII": [], "Num_of_PII": 0, "source_columns": ["chat.account_login", "chat.chat_identifier", "chat.guid", "chat.last_addressed_handle", "handle.id", "handle.uncanonicalized_id", "message.account", "message.destination_caller_id"], "Num_of_source_columns": 8}
+{"db_path": "selectedDBs\\I3_sms.db", "PII_type": "", "PII": [], "Num_of_PII": 0, "source_columns": [], "Num_of_source_columns": 0}
+{"db_path": "selectedDBs\\I3_sms.db", "PII_type": "", "PII": [], "Num_of_PII": 0, "source_columns": [], "Num_of_source_columns": 0}
+{"db_path": "selectedDBs\\I3_sms.db", "PII_type": "", "PII": [], "Num_of_PII": 0, "source_columns": [], "Num_of_source_columns": 0}

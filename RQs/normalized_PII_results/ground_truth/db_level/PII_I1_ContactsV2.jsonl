@@ -1,0 +1,5 @@
+{"db_path": "selectedDBs\\I1_ContactsV2.sqlite", "PII_type": "", "PII": [], "Num_of_PII": 0, "source_columns": [], "Num_of_source_columns": 0}
+{"db_path": "selectedDBs\\I1_ContactsV2.sqlite", "PII_type": "", "PII": [], "Num_of_PII": 0, "source_columns": ["zwaaddressbookcontact.zphonenumber"], "Num_of_source_columns": 1}
+{"db_path": "selectedDBs\\I1_ContactsV2.sqlite", "PII_type": "", "PII": [], "Num_of_PII": 0, "source_columns": [], "Num_of_source_columns": 0}
+{"db_path": "selectedDBs\\I1_ContactsV2.sqlite", "PII_type": "", "PII": [], "Num_of_PII": 0, "source_columns": ["zwaaddressbookcontact.zfullname"], "Num_of_source_columns": 1}
+{"db_path": "selectedDBs\\I1_ContactsV2.sqlite", "PII_type": "", "PII": [], "Num_of_PII": 0, "source_columns": [], "Num_of_source_columns": 0}

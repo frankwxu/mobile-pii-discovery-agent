@@ -1,0 +1,5 @@
+{"db_path": "selectedDBs\\I1_ChatStorage.sqlite", "PII_type": "", "PII": [], "Num_of_PII": 0, "source_columns": [], "Num_of_source_columns": 0}
+{"db_path": "selectedDBs\\I1_ChatStorage.sqlite", "PII_type": "", "PII": [], "Num_of_PII": 0, "source_columns": ["zwachatsession.zpartnername", "zwaprofilepushname.zpushname"], "Num_of_source_columns": 2}
+{"db_path": "selectedDBs\\I1_ChatStorage.sqlite", "PII_type": "", "PII": [], "Num_of_PII": 0, "source_columns": ["zwamediaitem.ztitle", "zwamessage.ztext", "zwamessagedataitem.zsummary", "zwamessagedataitem.ztitle"], "Num_of_source_columns": 4}
+{"db_path": "selectedDBs\\I1_ChatStorage.sqlite", "PII_type": "", "PII": [], "Num_of_PII": 0, "source_columns": ["zwachatsession.zpartnername", "zwamediaitem.ztitle", "zwamessage.ztext", "zwamessagedataitem.zsummary", "zwamessagedataitem.ztitle", "zwaprofilepushname.zpushname"], "Num_of_source_columns": 6}
+{"db_path": "selectedDBs\\I1_ChatStorage.sqlite", "PII_type": "", "PII": [], "Num_of_PII": 0, "source_columns": ["zwamediaitem.ztitle", "zwamessage.ztext", "zwamessagedataitem.ztitle"], "Num_of_source_columns": 3}
