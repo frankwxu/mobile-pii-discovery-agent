@@ -1,13 +1,11 @@
 app_code,app_name,total_columns
-A1,WhatsApp,1637
-A2,Snapchat,848
+A1,WhatsApp,1627
+A2,Snapchat,842
 A3,Telegram,1197
-A4,Google Maps,80
-A5,Samsung Internet,185
+A4,Google Maps,71
+A5,Samsung Internet,173
 I1,WhatsApp,328
-I2,Contacts,13
-I3,Apple Messages,186
-I4,Safari,74
-I5,Calendar,541
-test2,test2,12
-users,users,3
+I2,Contacts,219
+I3,Apple Messages,181
+I4,Safari,72
+I5,Calendar,539

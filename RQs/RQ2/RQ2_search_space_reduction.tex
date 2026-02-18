@@ -1,0 +1,31 @@
+\begin{table}[th]
+\centering
+\caption{Reduction of effective extraction space via hypothesis-driven planning. Total candidate columns are counted over all tables in the selected databases for each application, while reductions correspond to columns exhaustively scanned during row-level PII extraction.}
+\label{tab:search_space_reduction}
+\small
+\begin{tabular}{|l|l|p{1.3cm}|p{1.7cm}|p{1.0cm}|}
+\hline
+\textbf{ID} & \textbf{Apps} & \textbf{Candidate Cols (Total)} & \textbf{Cols Scanned (Extraction)} & \textbf{Reduc. (\%)} \\
+\hline
+A1 & WhatsApp & 1627 & 40 & 97.54\% \\
+\hline
+A2 & Snapchat & 842 & 161 & 80.88\% \\
+\hline
+A3 & Telegram & 1197 & 0 & 100.00\% \\
+\hline
+A4 & Google Maps & 71 & 2 & 97.18\% \\
+\hline
+A5 & Samsung Internet & 173 & 43 & 75.14\% \\
+\hline
+I1 & WhatsApp & 328 & 44 & 86.59\% \\
+\hline
+I2 & Contacts & 219 & 17 & 92.24\% \\
+\hline
+I3 & Apple Messages & 181 & 39 & 78.45\% \\
+\hline
+I4 & Safari & 72 & 0 & 100.00\% \\
+\hline
+I5 & Calendar & 539 & 35 & 93.51\% \\
+\hline
+\end{tabular}
+\end{table}

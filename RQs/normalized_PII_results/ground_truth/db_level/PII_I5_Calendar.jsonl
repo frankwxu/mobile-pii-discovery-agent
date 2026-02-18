@@ -1,5 +1,5 @@
-{"db_path": "selectedDBs\\I5_Calendar.sqlitedb", "PII_type": "", "PII": [], "Num_of_PII": 0, "source_columns": ["calendar.last_sync_title", "calendar.notes", "calendar.owner_identity_email", "calendar.self_identity_email", "calendar.shared_owner_address", "calendar.title", "identity.address"], "Num_of_source_columns": 7}
-{"db_path": "selectedDBs\\I5_Calendar.sqlitedb", "PII_type": "", "PII": [], "Num_of_PII": 0, "source_columns": [], "Num_of_source_columns": 0}
-{"db_path": "selectedDBs\\I5_Calendar.sqlitedb", "PII_type": "", "PII": [], "Num_of_PII": 0, "source_columns": [], "Num_of_source_columns": 0}
-{"db_path": "selectedDBs\\I5_Calendar.sqlitedb", "PII_type": "", "PII": [], "Num_of_PII": 0, "source_columns": ["calendar.shared_owner_name", "identity.display_name", "store.owner_name"], "Num_of_source_columns": 3}
-{"db_path": "selectedDBs\\I5_Calendar.sqlitedb", "PII_type": "", "PII": [], "Num_of_PII": 0, "source_columns": ["recurrence.cached_end_date_tz"], "Num_of_source_columns": 1}
+{"db_path": "selectedDBs\\I5_Calendar.sqlitedb", "PII_type": "EMAIL", "PII": ["ottomatik1234@gmail.com"], "Num_of_PII": 1, "source_columns": ["calendar.last_sync_title", "calendar.notes", "calendar.owner_identity_email", "calendar.self_identity_email", "calendar.shared_owner_address", "calendar.title", "identity.address"], "Num_of_source_columns": 7}
+{"db_path": "selectedDBs\\I5_Calendar.sqlitedb", "PII_type": "PHONE", "PII": [], "Num_of_PII": 0, "source_columns": [], "Num_of_source_columns": 0}
+{"db_path": "selectedDBs\\I5_Calendar.sqlitedb", "PII_type": "USERNAME", "PII": [], "Num_of_PII": 0, "source_columns": [], "Num_of_source_columns": 0}
+{"db_path": "selectedDBs\\I5_Calendar.sqlitedb", "PII_type": "PERSON_NAME", "PII": ["otto matik", "rosh hashanah", "ashura", "martin luther king jr. day", "otto matik’s birthday"], "Num_of_PII": 5, "source_columns": ["calendar.shared_owner_name", "calendaritem.summary", "identity.display_name", "store.owner_name"], "Num_of_source_columns": 4}
+{"db_path": "selectedDBs\\I5_Calendar.sqlitedb", "PII_type": "POSTAL_ADDRESS", "PII": [], "Num_of_PII": 0, "source_columns": [], "Num_of_source_columns": 0}
